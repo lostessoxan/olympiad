@@ -12,14 +12,14 @@
 // ==================
 
 
-$p-c: rgb(255, 86, 71);
+$p-c: rgb(255, 88, 85);
 
 * {
     margin: 0;padding: 0;
     border: 0;
     outline: none;
     transition: all .2s ease;
-    text-transform: capitalize;
+    // text-transform: capitalize;
 }
 
 html {
@@ -121,7 +121,7 @@ nav {
         gap: 18px;
         align-items: center;
 
-        font-size: 20px;
+        font-size: 22px;
         color: #fff;
 
         p {
@@ -139,7 +139,7 @@ nav {
             width: 100%;
             // flex: 0 1 50px;
             color: #fff;
-            font-size: 20px;
+            font-size: 22px;
             border-radius: 10px;
         }
     }

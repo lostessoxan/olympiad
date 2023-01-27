@@ -15,6 +15,7 @@
         <nav class="navbar">
             <p>Select Task >></p>
             <div class="navbar-btns">
+                <div class="navbar-btn" id="navBtn-firstTask">1</div>
                 <div class="navbar-btn" id="navBtn-secondTask">2</div>
                 <div class="navbar-btn" id="navBtn-thirdTask">3</div>
                 <div class="navbar-btn" id="navBtn-fourthTask">4</div>
@@ -23,6 +24,28 @@
                 <div class="navbar-btn" id="navBtn-seventhTask">7</div>
             </div>
         </nav>
+
+        <!-- --------- first task -->
+
+        <div class="box firstTask" id="firstTask">
+            <div class="prompt">
+                <label>
+                    <p>Введите первую дату (которая раньше) в формате <span>dd.mm.yyyy</span>:</p>
+                    <input type="text" id="firstTaskInput-1">
+                </label>
+            </div>
+
+            <div class="prompt">
+                <label>
+                    <p>Введите вторую дату (которая позже) в формате <span>dd.mm.yyyy</span>:</p>
+                    <input type="text" id="firstTaskInput-2">
+                </label>
+            </div>
+
+            <button class="btn firstTaskBtn" id="firstTaskBtn">Получить ответ</button>
+
+            <div class="answer-box" id="firstTaskAnswerBox"></div>
+        </div>
 
         <!-- -------- second task -->
 
@@ -201,7 +224,8 @@
 
     </div>
     
-    <script src="./main.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/first.js"></script>
     <script src="./scripts/second.js"></script>
     <script src="./scripts/third.js"></script>
     <script src="./scripts/fourth.js"></script>
