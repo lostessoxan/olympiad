@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Задания - Филиппов</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <p>Select Task >></p>
+            <div class="navbar-btns">
+                <div class="navbar-btn" id="navBtn-secondTask">2</div>
+                <div class="navbar-btn" id="navBtn-thirdTask">3</div>
+                <div class="navbar-btn" id="navBtn-fourthTask">4</div>
+                <div class="navbar-btn" id="navBtn-fifthTask">5</div>
+                <div class="navbar-btn" id="navBtn-sixthTask">6</div>
+                <div class="navbar-btn" id="navBtn-seventhTask">7</div>
+            </div>
+        </nav>
+
+        <!-- -------- second task -->
+
+        <div class="box secondTask" id="secondTask">
+            <div class="prompt">
+                <label>
+                    <p>Введите длину клетчатой полосы:</p>
+                    <input type="text" id="secondTaskInput-1">
+                </label>
+            </div>
+
+            <button class="btn secondTaskBtn" id="secondTaskBtn">Получить ответ</button>
+
+            <div class="answer-box" id="secondTaskAnswerBox"></div>
+        </div>
+
+        <!-- -------- third task -->
+        <div class="box thirdTask" id="thirdTask">
+
+            <div class="prompt">
+                <label>
+                    <p>Введите необходимое количество ручек в заказе:</p>
+                    <input type="text" id="thirdTaskInput-1">
+                </label>
+            </div>
+
+            <div class="prompt">
+                <label>
+                    <p>Введите максимальный размер одной упаковки:</p>
+                    <input type="text" id="thirdTaskInput-2">
+                </label>
+            </div>
+
+            <button class="btn thirdTaskBtn" id="thirdTaskBtn">Получить ответ</button>
+
+            <div class="answer-box" id="thirdTaskAnswerBox"></div>
+        </div>
+
+        <!-- -------- fourth task -->
+
+        <div class="box fourthTask" id="fourthTask">
+
+            <div class="prompt">
+                <label>
+                    <p>Введите длительность первого фильма в минутах:</p>
+                    <input type="text" id="fourthTaskInput-1">
+                </label>
+            </div>
+
+            <div class="prompt">
+                <label>
+                    <p>Введите длительность второго фильма в минутах:</p>
+                    <input type="text" id="fourthTaskInput-2">
+                </label>
+            </div>
+
+            <div class="prompt">
+                <label>
+                    <p>Введите время в минутах, прошедшее с начала показа фильмов:</p>
+                    <input type="text" id="fourthTaskInput-3">
+                </label>
+            </div>
+
+            <button class="btn fourthTaskBtn" id="fourthTaskBtn">Получить ответ</button>
+
+            <div class="answer-box" id="fourthTaskAnswerBox"></div>
+        </div>
+
+        <!-- ------------------- -->
+
+        <div class="box fifthTask" id="fifthTask">
+
+            <div>
+                <div class="fifthTaskBox">
+                    <div class="prompt">
+                        <label>
+                            <p>Изначальное количество баллов на карте:</p>
+                            <input type="text" id="fifthTaskInput-1">
+                        </label>
+                    </div>
+        
+                    <div class="prompt">
+                        <label>
+                            <p>Количество динозавров в коллекции:</p>
+                            <input type="text" id="fifthTaskInput-2">
+                        </label>
+                    </div>
+        
+                    <div class="prompt">
+                        <label>
+                            <p>Стоимость одного динозавра:</p>
+                            <input type="text" id="fifthTaskInput-3">
+                        </label>
+                    </div>
+                </div>
+                <div class="fifthTaskBox">
+                    <div class="prompt">
+                        <label>
+                            <p>Количество баллов, начисляемых за 1ю покупку:</p>
+                            <input type="text" id="fifthTaskInput-4">
+                        </label>
+                    </div>
+        
+                    <div class="prompt">
+                        <label>
+                            <p>Количество баллов, начисляемых за 2ю покупку:</p>
+                            <input type="text" id="fifthTaskInput-5">
+                        </label>
+                    </div>
+        
+                    <div class="prompt">
+                        <label>
+                            <p>Количество баллов, начисляемых за 3ю покупку:</p>
+                            <input type="text" id="fifthTaskInput-6">
+                        </label>
+                    </div>
+    
+                    
+                </div>
+            </div>
+
+            <button class="btn fifthTaskBtn" id="fifthTaskBtn">Получить ответ</button>
+
+            <div class="answer-box" id="fifthTaskAnswerBox"></div>
+            
+        </div>
+
+
+        <!-- ======================= -->
+
+        <div class="box sixthTask" id="sixthTask">
+                <div class="sixthTaskBox">
+                    <div class="prompt">
+                        <label>
+                            <p>Длина окружности в метрах:</p>
+                            <input type="text" id="sixthTaskInput-1">
+                        </label>
+                    </div>
+        
+                    <div class="prompt">
+                        <label>
+                            <p>Длина прыжка кузнечика в метрах:</p>
+                            <input type="text" id="sixthTaskInput-2">
+                        </label>
+                    </div>
+        
+                    <button class="btn sixthTaskBtn" id="sixthTaskBtn">Получить ответ</button>
+
+                    <div class="answer-box" id="sixthTaskAnswerBox"></div>
+                </div>
+        </div>
+
+        <!-- --------------- -->
+
+        <div class="box seventhTask" id="seventhTask">
+            <div class="sixthTaskBox">
+                <div class="prompt">
+                    <label>
+                        <p>Количество энергии:</p>
+                        <input type="text" id="seventhTaskInput-1">
+                    </label>
+                </div>
+    
+                <div class="prompt">
+                    <label>
+                        <p>Введите <span>СЛИТНО</span> через запятую элементы <br>массива произвольной длины (0,0,0,0,0...):</p>
+                        <input type="text" id="seventhTaskInput-2">
+                    </label>
+                </div>
+    
+                <button class="btn seventhTaskBtn" id="seventhTaskBtn">Получить ответ</button>
+
+                <div class="answer-box" id="seventhTaskAnswerBox"></div>
+            </div>
+    </div>
+
+    </div>
+    
+    <script src="./main.js"></script>
+    <script src="./scripts/second.js"></script>
+    <script src="./scripts/third.js"></script>
+    <script src="./scripts/fourth.js"></script>
+    <script src="./scripts/fifth.js"></script>
+    <script src="./scripts/sixth.js"></script>
+    <script src="./scripts/seventh.js"></script>
+</body>
+</html>

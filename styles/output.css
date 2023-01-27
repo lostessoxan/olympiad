@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+nav .navbar-btns, nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  background: #333;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  background: #fff;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.btn:hover {
+  background: rgb(230, 230, 230);
+}
+.btn:active {
+  background: rgb(142, 142, 142);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  gap: 15px;
+  padding: 15px 0;
+}
+nav .navbar-btns {
+  gap: 15px;
+}
+nav .navbar-btns .navbar-btn {
+  cursor: pointer;
+  background: rgb(255, 86, 71);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+nav .navbar-btns .navbar-btn:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 86, 71);
+}
+nav p {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.prompt {
+  margin: 35px 0;
+}
+.prompt label {
+  display: grid;
+  gap: 18px;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
+.prompt label p {
+  cursor: pointer;
+}
+.prompt label p:hover {
+  color: rgb(255, 86, 71);
+}
+.prompt label input {
+  background: none;
+  border: 2px solid #fff;
+  padding: 12px 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.prompt span {
+  color: rgb(255, 86, 71);
+}
+
+.answer-box {
+  margin-top: 18px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  transform: scaleX(0);
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.box.fifthTask {
+  display: grid;
+}
+.box.fifthTask > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.box.fifthTask button {
+  flex: 0 1 100px;
+}
+
+/*# sourceMappingURL=output.css.map */

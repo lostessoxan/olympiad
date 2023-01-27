@@ -1,0 +1,8 @@
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\bin\Debug\firstTaskk.exe.config
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\bin\Debug\firstTaskk.exe
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\bin\Debug\firstTaskk.pdb
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\obj\Debug\firstTaskk.csproj.AssemblyReference.cache
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\obj\Debug\firstTaskk.csproj.SuggestedBindingRedirects.cache
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\obj\Debug\firstTaskk.csproj.CoreCompileInputs.cache
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\obj\Debug\firstTaskk.exe
+C:\Users\skore\OneDrive\Рабочий стол\olimp\1-task\firstTaskk\firstTaskk\obj\Debug\firstTaskk.pdb
