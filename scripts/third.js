@@ -25,20 +25,25 @@ thirdTaskBtn.onclick = () => {
     let n = parseInt(thirdTaskInput1.value),
         m = parseInt(thirdTaskInput2.value),
         count = 0;
-    const packsArr = []
+    let packsArr = []
 
     function secondFunc(k) {
+        if (m === 0) {
+            packsArr = [0]
+            return
+        }
         if(k / m < 1) while (k / m < 1) m--;
         else if (count + m > n) return;
         else initFunc(k / m);
         
-        if(packsArr[packsArr.length - 1] != m) {
+        if(packsArr[packsArr.length - 1] != m && m != 0) {
             packsArr.push(m)
             return
         }
     }
     
     function initFunc(k) {
+        // debugger
         for (let i = 0; i < k; i++) {
             // console.log(i);
             packsArr.push(m)
@@ -48,16 +53,20 @@ thirdTaskBtn.onclick = () => {
         secondFunc(n - count)
     }
     
-    if (n === m) packsArr.push(n)
-    // console.log(parseInt(n / m));
-    if (n > m) initFunc(parseInt(n / m))
+    debugger
+    if (n <= m) packsArr.push(n)
+    if (m <= n / 2) packsArr = [0]
+    else if (n > m) initFunc(parseInt(n / m))
     
     // console.log(packsArr);
 
     // =================
 
     if(packsArr.length === 0) answerBox3.innerHTML = 0;
-    else answerBox3.innerHTML = packsArr;
+    else {
+        // if(packsArr[packsArr.length - 1] === 0) packsArr.length -= 1
+        answerBox3.innerHTML = packsArr;
+    }
 }
 
 

@@ -41,16 +41,19 @@ fifthTaskBtn.onclick = () => {
 
     if (numberOfPoints >= requiredPoints) result = 0
     else {
-        for (j = 0; numberOfPoints < requiredPoints;) {
-            result++
-            numberOfPoints += arr[j]
-
-            if (j === 2) {
-                j = 0
-                continue
+        if (p1 === 0 && p2 === 0 && p3 === 0) result = 'not real'
+        else {
+            for (j = 0; numberOfPoints < requiredPoints;) {
+                result++
+                numberOfPoints += arr[j]
+    
+                if (j === 2) {
+                    j = 0
+                    continue
+                }
+    
+                j++
             }
-
-            j++
         }
     }
 

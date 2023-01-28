@@ -1,29 +1,30 @@
-
-let 
-    fourthTaskBtn = document.getElementById('fourthTaskBtn'),
-    answerBox4 = document.getElementById('fourthTaskAnswerBox'),
-    timeWhenFirstBegin,
-    timeWhenSecondBegin;
+let fourthTaskBtn = document.getElementById('fourthTaskBtn'),
+    answerBox4 = document.getElementById('fourthTaskAnswerBox');
 
 fourthTaskBtn.onclick = () => {
 
     answerBox4.style.transform = 'scaleX(1)'
 
-    let firstFilmTime = parseInt(document.getElementById('fourthTaskInput-1').value),
-    secondFilmTime = parseInt(document.getElementById('fourthTaskInput-2').value),
+    let A = parseInt(document.getElementById('fourthTaskInput-1').value),
+    B = parseInt(document.getElementById('fourthTaskInput-2').value),
     t = parseInt(document.getElementById('fourthTaskInput-3').value);
 
-    timeWhenFirstBegin = t < firstFilmTime ? firstFilmTime - t 
-                                        : (t % firstFilmTime === 0 ? 0
-                                        : firstFilmTime - (t % 3)); 
+    debugger
+    if (A === 0 && B === 0) answerBox4.innerHTML = 0
+    else {
+        A = (A === 0) ? 999999999999 : A
+        B = (B === 0) ? 999999999999 : B
 
-    timeWhenSecondBegin = t < secondFilmTime ? secondFilmTime - t 
-                                        : (t % secondFilmTime === 0 ? 0
-                                        : secondFilmTime - (t % 3)); 
-
-    //console.log(`Время: ${Math.min(timeWhenFirstBegin, timeWhenSecondBegin)}`);
-
-    answerBox4.innerHTML = `Время: ${Math.min(timeWhenFirstBegin, timeWhenSecondBegin)}`
+        answerBox4.innerHTML = `Время: ${Math.min(
+            t < A ? A - t 
+                  : (t % A === 0 ? 0
+                  : A - (t % A)),
+    
+            t < B ? B - t 
+                  : (t % B === 0 ? 0
+                  : B - (t % B))
+        )}`
+    }
 }
 
 

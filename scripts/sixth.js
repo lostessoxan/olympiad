@@ -74,5 +74,17 @@ sixthTaskBtn.onclick = () => {
 
     // debugger
     
-    answerBox6.innerHTML = `Прыжки = ${getCountOfJumps()}`
+    
+    let f = sixthTaskInput1,
+        s = sixthTaskInput2
+
+    answerBox6.innerHTML = f === s ? 1  : (f === 0 ? 0 
+                                        : (s === 0 ? f 
+                                        : (s < 0 ? `not real` 
+                                        : `Прыжки = ${getCountOfJumps()}`)))
+
+    // if (sixthTaskInput1 === 0) answerBox6.innerHTML = 0;
+    // else if (sixthTaskInput2 === 0) answerBox6.innerHTML = sixthTaskInput1;
+    // else if (sixthTaskInput2 < 0) answerBox6.innerHTML = `not real`;
+    // else answerBox6.innerHTML = `Прыжки = ${getCountOfJumps()}`
 }

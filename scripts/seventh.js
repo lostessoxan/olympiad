@@ -9,23 +9,14 @@ seventhTaskBtn.onclick = () => {
         seventhTaskInput2 = document.getElementById('seventhTaskInput-2').value;
 
     // =============== js
-    let k = seventhTaskInput1
-    let arr = seventhTaskInput2.split(',')
+    let k = seventhTaskInput1,
+        arr = seventhTaskInput2.split(',');
 
     arr = arr.map(el => parseInt(el))
 
-    let res = 0;
-    let res2 = 0;
-    let res3 = 0;
-    let res4 = 0;
-
-    // for (let i = 0; i < length; i++) {
-    //     arr[i] = Math.floor(Math.random() * (20 - 1) + 4)
-    // }
-
-    let temp = arr.map(el => el)
-
-    // console.log(arr);
+    let res = 0,
+        res2 = 0,
+        temp = arr.map(el => el);
 
     function getSameNums(arr) {
         for (let i = 0; i < arr.length; i++) {
@@ -69,17 +60,9 @@ seventhTaskBtn.onclick = () => {
             } 
         }
         return res2
-    }
+    }   
 
-
-    // console.log(getSameNums(arr));
-    // console.log(getSameNums2(temp));
-    // console.log(`Мин. кол-во энергии = ${Math.min(getSameNums(arr), getSameNums2(temp))}.`);     
-
-    answerBox7.innerHTML = `Мин-е кол-во <br>энергии = ${Math.min(getSameNums(arr), getSameNums2(temp))}}`
-
-
-    // console.log(arr);
+    answerBox7.innerHTML = k === 0 ? 0 : answerBox7.innerHTML = `Мин-е кол-во <br>энергии = ${Math.min(getSameNums(arr), getSameNums2(temp))}}`
 }
 
 
