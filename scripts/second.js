@@ -43,10 +43,10 @@ secondTaskBtn.onclick = () => {
         Instance4 = GetNum(3, 2),
         min = Math.min(Instance1, Instance2, Instance3, Instance4);
 
-    min = min === 100 ? -1 : (min === 0 ? -1 : min);
-    console.log(`Результат: ${min}`);
-
-    answerBox.innerHTML = min;
+    answerBox.innerHTML = length === 1 ? 0 : (min === 100 ? -1 : (min === 0 ? -1 : min));
+    
+    // min = min === 100 ? -1 : (min === 0 ? -1 : min);
+    // answerBox.innerHTML = min;
 }
 
 
